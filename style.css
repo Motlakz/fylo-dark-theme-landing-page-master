@@ -24,9 +24,24 @@ h3 {
 .navbar ul li a {
     text-decoration: none;
 }
-
 footer {
     background: hsl(216, 53%, 9%);
+}
+footer ul {
+    padding: 20px;
+}
+footer ul li {
+    list-style: none;
+    padding: 5px;
+}
+.bottom a {
+    text-decoration: none;
+}
+.fa {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
 }
 @media screen and (max-width: 375px) {
     .hero-img img,
@@ -91,5 +106,26 @@ footer {
         width: 20px;
         height: 20px;
         border-radius: 50%;
+    }
+    .icons {
+        text-align: center;
+    }
+    .border {
+        padding: 20px;
+    }
+    .border p,
+    .border span {
+        padding-left: 30px;
+    }
+    span {
+        display: block;
+    }
+    span,
+    .border p {
+        position: relative;
+        bottom: 20px
+    }
+    footer .logo {
+        padding-bottom: 20px;
     }
 }
