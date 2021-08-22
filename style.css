@@ -10,6 +10,7 @@
 }
 body {
     background: hsl(217, 28%, 15%);
+    width: 100%;
 }
 h1,
 h3 {
@@ -35,6 +36,7 @@ button:hover {
 
 footer {
     background: hsl(216, 53%, 9%);
+    padding-top: 200px;
 }
 footer ul {
     padding: 20px;
@@ -56,6 +58,17 @@ footer ul li {
     background: hsl(176, 68%, 64%);
 }
 @media screen and (max-width: 375px) {
+    .navbar .logo img {
+        width: 50%;
+    }
+    .navbar {
+        display: flex;
+        padding: 10px;
+    }
+    .navbar ul li {
+        display: inline-block; 
+        padding: 3px;
+    }
     .hero-img img,
     .fifth .productive {
         width: 80%;
@@ -72,11 +85,11 @@ footer ul li {
     }
     .fifth h3 {
         position: relative;
-        right: 50px;
+        right: 40px;
     }
     .fifth span {
         position: relative;
-        right: 88px;
+        right: 80px;
         top: 20px;
         text-decoration-line: underline;
     }
@@ -156,10 +169,11 @@ footer ul li {
         background: hsl(217, 28%, 15%);
         height: 50vh;
         text-align: center;
-        margin: 20px;
         box-shadow: 3px 5px 5px 3px rgba(0, 0, 0, 0.3);
-        border-radius: 20px;
-        padding: 20px
+        border-radius: 10px;
+        padding: 30px;
+        position: relative;
+        top: 280px;
     }
     input,
     .button {
@@ -191,6 +205,6 @@ footer ul li {
         bottom: 20px
     }
     footer .logo {
-        padding-bottom: 20px;
+        padding: 20px;
     }
 }
